@@ -1,0 +1,692 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es-CO-CTG">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formato de Inscripción - Fundación Opción Mundial</title>
+    <meta name="description" content="Formato de Inscripción a Fundación Opción Mundial.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="https://fundacionopcionmundial.org/wp-content/uploads/2024/01/LOGO-OPCION-MUNDIAL-04-1-300x168.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Syabil&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+
+
+
+    <div class="container mt-4">
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-10  text-center">
+
+
+
+
+                <!-- Logo -->
+
+                <header class="mb-1 mt-3">
+
+                    <a href="https://fundacionopcionmundial.org/" target="_blank" rel="noopener noreferrer">
+                        <img class="logo img-fluid" src="https://fundacionopcionmundial.org/wp-content/uploads/2024/01/LOGO-OPCION-MUNDIAL-04-1-300x168.png" alt="Logo de Opción Mundial">
+                    </a>
+            
+                </header>
+
+             
+            
+            
+                
+            <!--CONTENEDOR DE TODO EL FORMULARIO-->
+
+         <main class="opcionmundial"> 
+
+
+
+
+                      <!-- Title -->
+
+            <div class="bg-primary text-white py-4 rounded "> 
+
+                <h1 class="titulo">FORMATO DE INSCRIPCIÓN A FUNDACIÓN OPCIÓN MUNDIAL <i class="fas fa-book-reader"></i></h1>
+
+              </div><br>
+         
+          
+            
+      
+                <!-- Description Text -->
+
+                <p class="texto">
+
+                    El siguiente formulario permitirá la postulación al programa <strong class="emprender">EMPRENDER PARA ESTUDIAR</strong>, el cual está dirigido a personas que, por situación o condición, no pueden acceder a una educación. El interés de nuestra fundación es promover el acceso a una educación gratuita. Los datos diligenciados serán de uso exclusivo para tal fin y estarán protegidos por la <strong class="emprender">ley 1581 de 2012 de protección de datos</strong>.
+                
+                </p>
+              
+
+
+
+
+
+
+
+     <h2 class="text-center mb-5 mt-5">DATOS PERSONALES</h2>
+
+
+
+     <!-- Formulario -->
+
+     <form id="usuarios">
+
+        <div class="row ">
+
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    <div class="usuarios2">
+                    <input type="text" id="name" name="name" class="form-control" autocomplete="off" placeholder="Nombre y Apellidos" required>
+                    <label for="name" class="form-label">Nombre y Apellidos</label>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- Barrio -->
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    <div class="usuarios2">
+                    <input type="text" id="barrio" name="barrio" class="form-control" autocomplete="off" placeholder="Barrio" required>
+                    <label for="barrio" class="form-label">Barrio</label>
+                    </div>
+                </div>
+            </div>
+            
+
+      
+            <!-- Dirección -->
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    <div class="usuarios2">
+                    <input type="text" id="Direccion" name="Direccion" class="form-control" autocomplete="off" placeholder="Dirección" required>
+                    <label for="Direccion" class="form-label">Dirección</label>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+            <!-- Teléfono -->
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    <div class="usuarios2">
+                    <input type="text" id="telefono" name="telefono" class="form-control" autocomplete="off" placeholder="Teléfono" required oninput="this.value = this.value.replace(/\D/g, '')">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    </div>
+                </div>
+            </div>
+            
+            
+    
+
+      
+            <!-- Email -->
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    <div class="usuarios2">
+                    <input type="email" id="ema1" name="email" class="form-control" autocomplete="off" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="El correo debe terminar en @gmail.com">
+                    <label for="ema" class="form-label">Email</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+     
+
+
+   
+                <!--SCRIPT DEL EMAIL 1-->
+            
+
+            <script>
+                document.getElementById("ema1").addEventListener("input", function () {
+                    const emailField = this;
+                    const regex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+        
+                    if (!regex.test(emailField.value)) {
+                        emailField.setCustomValidity("El correo debe terminar en @gmail.com");
+                    } else {
+                        emailField.setCustomValidity("");
+                    }
+                });
+            </script>
+        
+
+
+
+
+       <!--FECHAS-->
+
+         
+                <div  class="row justify-content-center mt-4">
+
+                    <div class="col-md-5 col-sm-12 mb-5">
+
+                        <!-- Fecha de Nacimiento -->
+                        <div class="form-group">
+                            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                            <input type="date" id="fechaNacimiento" name="fechaNacimiento" class="form-control mt-2" autocomplete="off" required>
+                        </div>
+                    </div>
+
+        
+
+
+                    
+                   
+                    <div class="col-md-5 col-sm-12 mb-5 ">
+
+                        <!-- Fecha de Diligenciamiento de formulario -->
+                        <div class="form-group">
+                            <label style="font-size: 15px;" for="fechaD">Fecha de Diligenciamiento del formulario</label>
+                            <input type="date" id="fechaD" name="fechaD" class="form-control mt-2" autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+               
+
+               
+                
+
+                
+                        
+ 
+
+
+
+
+
+
+        <!--TERMINADO-->
+
+
+
+
+
+
+  
+
+      <fieldset id="linea" class="mt-5">
+
+
+
+     <legend class="select">SELECCIONE:</legend>
+
+     <!-- Tipo de Nacionalidad -->
+     <section style="margin-top: 100px;" class="form-group">
+        <label><strong>TIPO DE NACIONALIDAD:</strong></label><br>
+        <div class="form-check form-check-inline mt-3">
+            <input type="radio" class="form-check-input" name="nacionalidad" value="colombiana" id="colombiana">
+            <label class="form-check-label" for="colombiana">Colombiana</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="nacionalidad" value="extranjera" id="extranjera">
+            <label class="form-check-label" for="extranjera">Extranjera</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="nacionalidad" value="venezolana" id="venezolana">
+            <label class="form-check-label" for="venezolana">Venezolana</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="nacionalidad" value="otros" id="otros1">
+            <label class="form-check-label" for="otros">Otros</label>
+        </div>
+        <input type="text" class="form-control mt-2" id="nacionalidad" name="otra_nacionalidad" autocomplete="off" placeholder="Escriba su otra nacionalidad...">
+     </section><br>
+    
+
+
+     <!-- Tipo de Documento -->
+     <section class="form-group mt-5">
+        <label><strong>TIPO DE DOCUMENTO:</strong></label><br>
+        <div class="form-check form-check-inline mt-3">
+            <input type="radio" class="form-check-input" name="documento" value="RC" id="RC">
+            <label class="form-check-label" for="RC">RC</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="documento" value="TI" id="TI">
+            <label class="form-check-label" for="TI">TI</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="documento" value="CC" id="CC">
+            <label class="form-check-label" for="CC">CC</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="documento" value="PPT" id="PPT">
+            <label class="form-check-label" for="PPT">PPT</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="documento" value="PTE" id="PTE">
+            <label class="form-check-label" for="PTE">PTE</label>
+        </div><br>
+     
+        <label class="mt-2"><strong>SU NUMERO DE DOCUMENTO:</strong></label>
+        <input type="text" class="form-control mt-1" name="numero" autocomplete="off" placeholder="Ingrese número" oninput="this.value = this.value.replace(/\D/g, '')">
+     </section><br>
+
+
+
+
+
+       <!-- SISBEN -->
+       <section class="form-group mt-5">
+        <label><strong>¿SISBEN?</strong></label><br>
+        <div class="form-check form-check-inline mt-3">
+            <input type="radio" class="form-check-input" name="sisben" value="SI" id="sisbenSI">
+            <label class="form-check-label" for="sisbenSI">SI</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="sisben" value="NO" id="sisbenNO">
+            <label class="form-check-label" for="sisbenNO">NO</label>
+        </div>
+        <br>
+        <label><strong>Si su respuesta es: ("SI"), Escriba su puntaje:</strong></label>
+        <input type="text" class="form-control mt-1" name="puntaje" autocomplete="off" placeholder="Ingrese puntaje">
+      </section><br>
+
+    
+
+
+
+
+       <!-- Víctima del conflicto o desplazado -->
+      <section class="form-group mt-5">
+        <label><strong>¿SE CONSIDERA VÍCTIMA DEL CONFLICTO O DESPLAZADO?:</strong></label><br>
+        <div class="form-check form-check-inline mt-3">
+            <input type="radio" class="form-check-input" name="victima" value="SI" id="victimaSI">
+            <label class="form-check-label" for="victimaSI">SI</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="victima" value="NO" id="victimaNO">
+            <label class="form-check-label" for="victimaNO">NO</label>
+        </div>
+        <br><br><br>
+        <label><strong>¿CON DISCAPACIDAD?:</strong></label><br>
+        <div class="form-check form-check-inline mt-3">
+            <input type="radio" class="form-check-input" name="discapacidad" value="SI" id="discapacidadSI">
+            <label class="form-check-label" for="discapacidadSI">SI</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="discapacidad" value="NO" id="discapacidadNO">
+            <label class="form-check-label" for="discapacidadNO">NO</label>
+        </div>
+       </section><br>
+    
+
+
+
+
+
+       <!-- Población -->
+      <section class="form-group mt-5">
+        <label><strong>CONSIDERA POBLACIÓN:</strong></label><br>
+        <div class="form-check form-check-inline mt-3">
+            <input type="radio" class="form-check-input" name="poblacion" value="afro" id="afro">
+            <label class="form-check-label" for="afro">Afro</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="poblacion" value="indigena" id="indigena">
+            <label class="form-check-label" for="indigena">Indígena</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="poblacion" value="raizal" id="raizal">
+            <label class="form-check-label" for="raizal">Raizal</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="poblacion" value="room" id="room">
+            <label class="form-check-label" for="room">Room</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="poblacion" value="ninguno" id="ninguno">
+            <label class="form-check-label" for="ninguno">Ninguno</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="poblacion" value="otros" id="otros2">
+            <label class="form-check-label" for="otros">Otros</label>
+        </div>
+
+        <input type="text" class="form-control mt-1" id="poblacion" name="otra_poblacion" autocomplete="off" placeholder="Escriba su otro tipo de población...">
+     </section><br>
+    
+
+
+
+
+      <!-- Nivel Académico -->
+      <section class="form-group mt-5">
+        <label><strong>NIVEL ACADEMICO:</strong></label><br>
+        <div class="form-check form-check-inline mt-3">
+            <input type="radio" class="form-check-input" name="nivel_academico" value="Primaria" id="primaria">
+            <label class="form-check-label" for="primaria">Primaria</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="nivel_academico" value="Bachillerato" id="bachillerato">
+            <label class="form-check-label" for="bachillerato">Bachillerato</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="nivel_academico" value="Tecnico" id="tecnico">
+            <label class="form-check-label" for="tecnico">Técnico</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="nivel_academico" value="Tecnologo" id="tecnologo">
+            <label class="form-check-label" for="tecnologo">Tecnólogo</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="nivel_academico" value="Profesional" id="profesional">
+            <label class="form-check-label" for="profesional">Profesional</label>
+        </div>
+        <input type="text" class="form-control mt-1" id="nivel_academico" name="otro_nivel_academico" autocomplete="off" placeholder="Escriba su otro nivel académico...">
+       </section>
+       </fieldset><br>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+       <h2 class="text-center mb-5 mt-5">DATOS DEL ACUDIENTE</h2>
+
+
+
+       <div class="row">
+
+
+
+
+        <!--STYLO TOP DEL ROW PARA SUBIR EL INPUT -->
+
+
+  <style>
+
+.row {
+
+position: relative;
+top: -25px;
+
+}
+  </style>
+
+
+
+
+      <!--name-->
+       <div class="col-md-6 mb-3">
+           <div class="form-group">
+               <div class="usuarios2">
+               <input type="text" id="name" name="name" class="form-control" autocomplete="off" placeholder="Nombre y Apellidos" required>
+               <label for="name" class="form-label">Nombre y Apellidos</label>
+               </div>
+           </div>
+       </div>
+ 
+   
+   
+
+
+
+       <!-- Teléfono -->
+       <div class="col-md-6 mb-3">
+        <div class="form-group">
+            <div class="usuarios2">
+            <input type="text" id="telefono" name="telefono" class="form-control" autocomplete="off" placeholder="Teléfono" required oninput="this.value = this.value.replace(/\D/g, '')">
+            <label for="telefono" class="form-label">Teléfono</label>
+            </div>
+        </div>
+       </div>
+       
+
+
+
+
+      <!-- Email -->
+      <div class="col-md-6 mb-3">
+        <div class="form-group">
+            <div class="usuarios2">
+            <input type="email" id="ema2" name="ema2" class="form-control" autocomplete="off" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="El correo debe terminar en @gmail.com">
+            <label for="ema" class="form-label">Email</label>
+            </div>
+        </div>
+       </div>
+    
+
+
+
+         <!--SCRIPT DEL EMAIL 2 -->
+
+      <script>
+
+      document.getElementById("ema2").addEventListener("input", function () {
+        const emailField = this;
+        const regex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+        if (!regex.test(emailField.value)) {
+            emailField.setCustomValidity("El correo debe terminar en @gmail.com");
+        } else {
+            emailField.setCustomValidity("");
+        }
+     });
+
+        </script>
+
+
+
+
+     <!-- Barrio -->
+     <div class="col-md-6 mb-3">
+        <div class="form-group">
+            <div class="usuarios2">
+            <input type="text" id="barrio" name="barrio" class="form-control" autocomplete="off" placeholder="Barrio" required>
+            <label for="barrio" class="form-label">Barrio</label>
+            </div>
+        </div>
+       </div>
+      </div>
+
+           
+    
+
+
+
+
+
+
+
+
+   
+     <h2 class="text-center mb-5 mt-5">DATOS DE LA AYUDA</h2>
+
+
+     <!-- Formulario -->
+    
+         <div class="row justify-content-center">
+            <div class="col-md-6 mb-3">
+                 <div class="form-group">
+                     <div class="usuarios2">
+                         <input type="text" id="programa" name="programa" class="form-control" autocomplete="off" placeholder="Nombre del Programa Técnico" required>
+                         <label for="programa" class="form-label">Programa técnico que desea estudiar</label>
+                     </div>
+                 </div>
+            </div>
+         </div>
+         
+         
+   
+   
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+                
+                <div class="checkboxxx">
+
+
+                    <section class="section">
+
+                        <label><strong>PERSONA QUE LOS POSTULA:</strong></label><br>
+                        <label><input type="radio" name="postulante" value="Fundación"> Fundación</label>
+                        <label><input type="radio" name="postulante" value="Junta de Acción Comunal"> Junta de Acción Comunal</label>
+                        <label><input type="radio" name="postulante" value="Iglesia"> Iglesia</label>
+                        <label><input type="radio" name="postulante" value="Líder"> Líder</label><br><br><br>
+                        
+                        <label><strong>De acuerdo a la casilla marcada diga quién lo postula:</strong></label>
+                        <input id="opcion" type="text" name="postula" value="Fundación Opción Mundial."  style="font-weight: bold; color:#007bff;"><br><br><br>
+                        
+                    </section>
+                </div><br><br>
+                
+             
+                
+            
+
+
+                   
+
+
+       <!-- Teléfono -->
+        
+       <div class="row justify-content-center">
+
+       <div class="col-md-6 mb-3">
+        <div class="form-group">
+            <div class="usuarios2">
+            <input type="text" id="telefono" name="telefono" class="form-control" autocomplete="off" placeholder="Teléfono" required oninput="this.value = this.value.replace(/\D/g, '')">
+            <label for="telefono" class="form-label">Teléfono de quien lo postula:</label>
+            </div>
+        </div>
+       </div>
+     
+       
+
+
+
+
+      <!-- Email -->
+     <div class="col-md-6 mb-3">
+        <div class="form-group">
+            <div class="usuarios2">
+            <input type="email" id="ema3" name="ema3" class="form-control" autocomplete="off" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="El correo debe terminar en @gmail.com">
+            <label for="ema" class="form-label">Su correo electronico:</label>
+            </div>
+        </div>
+      </div>
+       </div><br>
+       
+                
+
+   
+
+         
+       <!-- SCRIPT DE EMAIL 3-->
+
+
+
+                        <script>
+
+                            document.getElementById("ema3").addEventListener("input", function () {
+                                const emailField = this;
+                                const regex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+                
+                                if (!regex.test(emailField.value)) {
+                                    emailField.setCustomValidity("El correo debe terminar en @gmail.com");
+                                } else {
+                                    emailField.setCustomValidity("");
+                                }
+                          });
+         </script>
+            
+
+ 
+
+
+
+
+
+
+        <div class="container form-container mt-5"> 
+      <!-- Sección de Subida de Firma -->
+     <h3 class="text-center mb-4">Firmas:</h3>
+ 
+     <div class="firma-section row">
+        <div class="firma col-12 col-md-6">
+            <label for="firma-estudiante" style="font-weight: bold;">Firma del Estudiante:</label><br>
+            <input type="file" id="firma-estudiante" name="firma-estudiante" accept="image/*" required onchange="previewFirma(event)" class="xd">
+            <label for="firma-estudiante" class="xd">Seleccionar archivo</label>
+            <div class="preview">
+                <img id="firma-estudiante-preview" src="#" alt="Vista previa de la firma del estudiante">
+            </div>
+        </div>
+
+        <div class="firma col-12 col-md-6">
+            <label for="firma-aprobacion" style="font-weight: bold;">Firma o Sello de aprobación:</label><br>
+            <input type="file" id="firma-aprobacion" name="firma-aprobacion" accept="image/*" required onchange="previewFirmaAprobacion(event)" class="xd">
+            <label for="firma-aprobacion" class="xd">Seleccionar archivo</label>
+            <div class="preview">
+                <img id="firma-aprobacion-preview" src="#" alt="Vista previa de la firma de aprobación">
+            </div>
+        </div>
+     </div>
+        </div>
+
+
+        <button class="envia mt-5">Enviar</button>
+
+     </form>
+         </main>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+               
+
+
+
+
+
+      <script src="index.js"></script>

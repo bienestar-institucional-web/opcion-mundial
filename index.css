@@ -1,0 +1,650 @@
+
+
+
+
+
+
+
+
+/* Asegura que el body y html ocupen toda la altura de la pantalla */
+html, body {
+
+    margin: 0;
+    padding: 0;
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    overflow-x: hidden; /* Evita un posible scroll horizontal */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+body::after {
+
+    content: "";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url("https://portalelyonyireh.edu.co/styles/assets/images/background/Fondo-Login-Yinn.jpg");
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute; /* Cambiado de fixed a absolute */
+    z-index: -1;
+
+}
+
+
+
+
+/* Opcional: Clase para el contenedor interno */
+
+.opcionmundial {
+
+
+
+    
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 25px;
+    margin: 20px auto;
+    box-shadow: 3px 0 15px #ffffff;
+
+
+}
+
+
+
+
+.logo {
+
+ 
+    max-width: 300px;
+
+}
+
+
+.bg-primary {
+
+
+    position: relative;
+    top: -30px;
+  
+
+
+}
+
+
+
+/* Estilo del título */
+.titulo {
+
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #007bff;
+    padding: 21px;
+    border-radius: 50px;
+ 
+}
+
+
+
+/* Estilo para la descripción */
+.texto {
+
+
+font-size: 17px;
+color: #555; /* Color gris suave */
+text-align: center;
+position: relative;
+top: -35px;
+
+}
+
+
+
+
+
+
+
+/* Título principal */
+
+h2 {
+
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #4e73df; 
+
+}
+
+
+
+
+
+
+
+/* Etiquetas de los campos de formulario */
+
+label {
+
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+
+}
+
+
+
+
+
+
+
+
+input[type="text"] {
+
+    border: 1px solid #000000;
+ 
+
+}
+
+
+
+
+
+/* Campos de entrada (inputs) */
+
+
+ .form-control {
+
+    background-color: #ffffff; /* Fondo claro */
+    border: 1px solid #000000; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.5s ease;
+   
+}
+
+
+
+.form-control:focus {
+
+background-color: #ffffff;
+    box-shadow: 2px 0 15px #4e73df;
+
+ 
+}
+
+
+.form-label:focus {
+
+
+background-color: #000000;
+
+}
+
+
+
+input[type="date"] {
+
+
+    border: 1px solid #000000; /* Borde negro */
+
+}
+
+
+.form-check-input {
+
+
+    border: 2px solid #000000; /* Borde negro */
+   
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para el legend dentro de fieldset */
+#linea{
+
+    border: 2px solid #4e73df; /* Gris claro */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px; /* Asegura que haya espacio entre el fieldset y el siguiente elemento */
+}
+
+
+
+
+.select {
+
+    font-size: 1.5em;
+    font-weight: bold;
+    color:  #ffffff;
+    padding: 0 10px;
+    background-color: #007bff;
+
+    border-radius: 50px;
+   
+   
+}
+
+
+
+
+
+
+
+
+.usuarios2 {
+
+   
+    position: relative;
+    margin: 20px 0;
+    text-align: left; 
+    font-weight: bold;
+
+  
+}
+
+
+
+
+.usuarios2 input {
+
+
+    padding: 12px 8px;
+    font-size: 16px;
+    width: 100%; 
+    max-width: 500px; 
+    border: 1px solid #000000; 
+    border-radius: 5px;
+    transition: border-color 0.3s; 
+   
+    
+}
+
+
+
+.usuarios2 input::placeholder {
+
+    color: transparent;
+  
+}
+
+
+
+
+.usuarios2 label {
+
+
+    position: absolute;
+    top: 10px; 
+    left: 12px; 
+    color: #666;
+    font-size: 16px;
+    transition: 0.3s;
+    pointer-events: none;
+    background-color: #fff;
+    padding: 0 4px; /
+   
+}
+
+
+
+
+
+/* Movimiento del label al enfocar o escribir en el input */
+
+
+.usuarios2 input:focus + label,
+.usuarios2 input:not(:placeholder-shown) + label {
+
+
+    top: -12px; /* Ajusta la altura para que el label esté justo encima del borde */
+    left: 12px; /* Asegúrate de que esté alineado con el input */
+    font-size: 14px; /* Reduce el tamaño del label al subir */
+    color: #ffffff;
+    background-color: #4e73df; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Checkbox Styles */
+
+
+
+.checkboxxx {
+
+    color: black;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+
+
+
+.section {
+
+
+    margin-top: 20px;
+
+}
+
+
+
+
+
+#opcion {
+
+
+border: 2px solid #007bff;
+
+
+}
+
+
+
+
+.emprender {
+
+    color: #000000;
+font-weight: bold;
+
+
+
+
+}
+
+
+
+strong {
+
+
+color: #4e73df;
+
+}
+
+
+
+.section label {
+
+
+    display: block;
+    font-size: 1em;
+  
+
+}
+
+
+
+
+.section input[type="checkbox"] {
+
+    margin-right: 5px;
+}
+
+
+.section input[type="text"] {
+
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIRMAS */ 
+
+
+
+
+   /* Estilo personalizado para el contenedor de la firma */
+
+
+
+
+
+h3 {
+
+color: #007bff;
+
+
+}
+
+
+
+   .form-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 0 15px black;
+}
+
+.firma-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.firma {
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilo para el input de archivo y su botón personalizado */
+.firma input[type="file"] {
+    display: none;
+}
+
+.firma label.xd {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+
+.firma label.xd:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para la vista previa de la firma */
+.preview {
+    margin-top: 10px;
+}
+
+.preview img {
+    max-width: 150px;
+    max-height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none;
+}
+
+
+
+
+
+
+
+/* Estilo del botón personalizado */
+.envia {
+
+    padding: 10px  20px; /* Espaciado interior más pequeño */
+    font-size: 18px;
+    background-color: rgb(0, 119, 0); /* Color de fondo */
+    color: rgb(255, 255, 255);
+    width: 200px;
+    border: 2px solid rgb(0, 119, 0);
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.envia:hover {
+
+    background-color:rgb(0, 59, 0); /* Color al pasar el mouse */
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 59, 0);
+}
+
+.envia {
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query para dispositivos pequeños (móviles) */
+
+
+
+@media (max-width: 600px) {
+
+    
+    .opcionmundial {
+
+        padding: 15px;
+        max-width: 90%;
+      
+    }
+
+
+    .logo {
+        max-width: 200px;
+    }
+
+
+    .bg-primary {
+      
+        top: 0;
+    
+    }
+
+
+    .titulo {
+
+        font-size: 18px;
+        padding: 10px;
+       
+    }
+
+    .texto {
+
+
+        font-size: 15px;
+        text-align: center;
+      
+top: 0;
+    }
+
+
+
+    .form-container {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .cuadro {
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    .form-control {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .usuarios2 input {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .section input[type="text"] {
+        width: calc(100% - 8px);
+    }
+
+    .envia {
+        padding: 8px 20px;
+        font-size: 16px;
+        width: 80%;
+    }
+}
+
+
+
+
+
